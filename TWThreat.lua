@@ -20,6 +20,11 @@ local __char = string.char
 
 local TWT = CreateFrame("Frame")
 
+-- modified by pf-miles 2025-10-15
+if macroTorch then
+    macroTorch.TWT = TWT
+end
+
 local has_superwow = SUPERWOW_VERSION or SetAutoloot
 
 TWT.addonVer = GetAddOnMetadata('TWThreat', 'Version')
